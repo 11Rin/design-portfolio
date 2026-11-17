@@ -1,5 +1,5 @@
 .portfolio-game {
-    max-width: 1200px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 40px 20px;
     font-family: 'Arial', sans-serif;
@@ -9,17 +9,18 @@
 .game-grid {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
 }
 
 .game-category {
     display: flex;
-    flex-direction: column;
     gap: 15px;
+    align-items: center;
 }
 
 .category-title {
-    font-size: 1.5rem;
+    min-width: 160px;
+    font-size: 1.2rem;
     font-weight: 700;
     color: #2d2d2d;
     margin: 0;
@@ -29,8 +30,9 @@
 
 .category-cells {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-template-columns: repeat(10, 100px);
     gap: 15px;
+    grid-auto-flow: column;
 }
 
 
@@ -38,7 +40,7 @@
     background-color: #f0f0f0;
     border: 2px solid #d0d0d0;
     border-radius: 8px;
-    padding: 20px 10px;
+    padding: 15px 10px;
     text-align: center;
     font-size: 1.2rem;
     font-weight: 700;
